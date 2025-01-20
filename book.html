@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0; /* Reset default margin */
+            line-height: 1.6;
+            color: #333; /* Dark gray text for better contrast */
+            background-color: #f4f4f4; /* Light gray background */
+        }
+
+        .site-wide-header {
+            background-color: #333; /* Dark gray header */
+            color: white;
+            padding: 10px 0;
+            text-align: center; /* Center the header text */
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Use flexbox for horizontal menu */
+            justify-content: center; /* Center the menu items */
+        }
+
+        nav li {
+            margin: 0 10px; /* Space between menu items */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #555; /* Slightly lighter gray for menu buttons */
+        }
+        nav a:hover{
+            background-color: #777;
+        }
+
+        .container {
+            width: 80%; /* Adjust as needed */
+            margin: 20px auto; /* Center the content */
+            display: flex;
+            gap: 20px;
+        }
+
+        article {
+            flex: 3; /* Takes up 3/4 of the container width */
+            background-color: white;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
+        }
+
+        aside {
+            flex: 1; /* Takes up 1/4 of the container width */
+            background-color: white;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        h1{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-wide-header">
+        <h1>Book Previews and Review</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article>
+            <h1>Book Preview</h1>
+            <p>It's late you're waiting for your son. Then You spot him; he's with someone and - you can't believe what you just witnessed, you don't know who and don't know why, you only know your son is charged with murder and in a fraction of moment his future is lost. That night you fall asleep in despair. But when you wake up it is yesterday; the day before the murder.</p>
+        </article>
+        <aside>
+            <h2>Title</h2>
+            <p>Wrong Place Wrong Time by Gillian McAllister</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Copyright © 2017 My Site</p>
+    </footer>
+
+</body>
+</html>
